@@ -1,0 +1,32 @@
+version: '3'
+services:
+  backend:
+    container_name: wisis_llm_1-backend
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/instance:/app/instance
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+  frontend:
+    container_name: wisis_llm_1-frontend
+    env_file:
+      - ./frontend/.env
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+  chatbot:
+    container_name: wisis_llm_1-chatbot
+    env_file:
+      - ./Chatbot/react-frontend/.env
+    build:
+      context: ./Chatbot/react-frontend
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80
+      

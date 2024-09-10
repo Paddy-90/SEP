@@ -1,0 +1,35 @@
+{
+    "contractNumber": "1125",
+    "customerNumber": "5235",
+    "houseNumber": "20",
+    "lastname": "Lustig",
+    "phoneNumber": "456456",
+    "place": "Hannover",
+    "plz": "30159",
+    "streetname": "Musterstraße",
+    "email": "p@web.de",
+    "firstname": "Peter",
+    "houseOrKfz": "house",
+    "damagedItems": [
+        {
+            "name": "Zaun",
+            "age": 3,
+            "price": "150,00"
+        },
+        {
+            "name": "Gartenhaus",
+            "age": 1,
+            "price": "950,50"
+        }
+    ],
+    "housePersonType": "Eigentümer",
+    "houseDamageDescription": "Zaun umgefallen",
+    "houseDamagePlaces": [
+        "Garten"
+    ],
+    "houseInsuranceType": "Gebäude",
+    "damageDate": "2024-05-26",
+    "damageDescription": "Sturmschaden",
+    "damagePlace": "Garten",
+    "damageTime": "18:00"
+}

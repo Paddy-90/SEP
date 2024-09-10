@@ -1,0 +1,8 @@
+{
+    "missingData": true,
+    "missingFields": [
+        "contractNumber",
+        "damageTime",
+        "place"
+    ]
+}

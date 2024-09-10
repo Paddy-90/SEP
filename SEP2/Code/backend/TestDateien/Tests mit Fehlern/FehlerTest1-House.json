@@ -1,0 +1,31 @@
+{
+    "contractNumber": "Heute",
+    "customerNumber": "5233",
+    "damageDate": "2024-05-24",
+    "damageDescription": "Brandursache unbekannt",
+    "damagePlace": "Obergeschoss",
+    "damageTime": null,
+    "damagedItems": [
+        {
+            "name": "Sofa",
+            "age": 5,
+            "price": "500,00"
+        }
+    ],
+    "email": "s@web.de",
+    "firstname": null,
+    "houseOrKfz": "house",
+    "houseDamageDescription": "Brand im og",
+    "houseDamagePlaces": [
+        "Küche",
+        "Wohn- /Schlaf- /Arbeitszimmer"
+    ],
+    "houseInsuranceType": "Gebäude",
+    "houseNumber": "12",
+    "housePersonType": "Eigentümer",
+    "lastname": "Sarah Wohlert",
+    "phoneNumber": "123123",
+    "place": null,
+    "plz": "38118",
+    "streetname": "Straßi"
+}

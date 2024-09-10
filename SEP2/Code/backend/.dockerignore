@@ -1,0 +1,3 @@
+# ignoriere .env Datei um sicherzustellen, dass keine sensiblen Daten in das Docker image gelangen
+.env
+**/*.db

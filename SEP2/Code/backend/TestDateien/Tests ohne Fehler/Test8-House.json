@@ -1,0 +1,43 @@
+{
+    "contractNumber": "1131",
+    "customerNumber": "5241",
+    "houseNumber": "25",
+    "lastname": "Schmidt",
+    "phoneNumber": "654321",
+    "place": "München",
+    "plz": "80331",
+    "streetname": "Leopoldstraße",
+    "email": "be@web.de",
+    "firstname": "Berta",
+    "houseOrKfz": "house",
+    "damagedItems": [
+        {
+            "name": "Fenster",
+            "age": 5,
+            "price": "300,00"
+        },
+        {
+            "name": "Fassade",
+            "age": 8,
+            "price": "1800,50"
+        }
+        ,
+        {
+            "name": "Tür",
+            "age": 6,
+            "price": "500,50"
+        }
+    ],
+    "housePersonType": "Mieter",
+    "houseDamageDescription": "Fenster und Fassade beschädigt",
+    "houseDamagePlaces": [
+        "Fenster",
+        "Tür",
+        "Fassade"
+    ],
+    "houseInsuranceType": "Hausrat",
+    "damageDate": "2024-06-02",
+    "damageDescription": "Hagelschaden",
+    "damagePlace": "Wohnzimmer",
+    "damageTime": "16:00"
+}

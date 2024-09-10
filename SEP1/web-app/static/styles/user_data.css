@@ -1,0 +1,131 @@
+/* user_data.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    background: #002ea7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo {
+    width: 208px;
+}
+.wrapper {
+    width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.wrapper h1 {
+    font-size: 26px;
+    color: #002ea7;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input-field {
+    position: relative;
+    width: 48%;
+    height: 45px;
+    margin: 13px 0;
+}
+.input-field input {
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid #002ea7;
+    outline: none;
+    font-size: 14px;
+    color: #4d4d4d;
+    padding: 0 15px 0 40px;
+    border-radius: 10px;
+    line-height: 45px; /* Same as height to center text vertically */
+}
+
+.input-field input[type="date"] {
+    padding: 0 15px 0 40px; /* Ensure consistent padding for date input */
+    line-height: 45px; /* Center the date text vertically */
+}
+
+.input-field ion-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #002ea7;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-back,
+.btn-forward {
+    width: 200px;
+    height: 45px;
+    background: #002ea7;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.btn-back:hover, 
+.btn-forward:hover {
+    background: #001d75;
+}
+.versicherung-dropdown {
+    position: relative;
+    display: flex; 
+    align-items: center;
+}
+.versicherung-dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    padding: 8px 8px 8px 40px;
+    border: 1.5px solid #002ea7;
+    border-radius: 10px; 
+    background-color: #fff; 
+    flex: 1;
+    cursor: pointer; 
+    outline: none; 
+    color: #4d4d4d;
+    font-size: 14px;
+}
+.versicherung-dropdown ion-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #002ea7;
+}
+.versicherung-dropdown select:invalid {
+    color: #da291c; 
+}

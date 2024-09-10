@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    background: #002ea7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo {
+    width: 208px;
+}
+.wrapper {
+    width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.wrapper h2 {
+    color: #002ea7;
+    margin-bottom: 10px;
+}
+.wrapper p {
+    margin-bottom: 10px;
+}
+.wrapper ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.upload-button {
+    display: flex; /* vertikal zentriert */ 
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.upload-button button {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    background: #002ea7;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding-left: 15px; 
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.upload-button ion-icon {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%);
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+.file-data {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.file-data-label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dashed #002ea7;
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    width: 150px;
+    height: 75px;
+}
+
+.file-data-label span {
+    color: #002ea7;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.file-data-label input[type="file"] {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    cursor: pointer; 
+}
+
+.regelw-file-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+
+
+
+.req-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.req-information input[type="date"],
+.req-information .versicherung-dropdown {
+    position: relative;
+    width: calc(50% - 10px);
+}
+
+.req-information input[type="date"] {
+    padding: 8px;
+    border: 1.5px solid #002ea7;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    color: #4d4d4d;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.req-information .versicherung-dropdown {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.req-information .versicherung-dropdown select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 8px 8px 8px 40px;
+    border: 1.5px solid #002ea7;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    color: #4d4d4d;
+    font-size: 14px;
+}
+
+.req-information .versicherung-dropdown ion-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #002ea7;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-back {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    background: #002ea7;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-back ion-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}

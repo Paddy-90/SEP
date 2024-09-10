@@ -1,0 +1,28 @@
+{
+  "contractNumber": "9987",
+  "customerNumber": "1234",
+  "damageDate": "2024-07-10",
+  "damageDescription": "Unfall auf der Autobahn",
+  "damagePlace": "A1, Höhe Rastplatz XY",
+  "damagedItems": [
+    {
+      "name": "Stoßstange",
+      "age": "3"
+    }
+  ],
+  "email": "example2@web.de",
+  "firstname": "Max",
+  "kfz_InsuranceType": "KFZ",
+  "kfz_responsibleParty": "Ich",
+  "kfz_victimCarPlate": "HH-AB-1234",
+  "kfz_victimCarType": "VW Golf",
+  "kfz_victimEmail": "victim@example.com",
+  "kfz_victimFirstname": "Thomas",
+  "kfz_victimLastname": "Müller",
+  "kfz_victimPhoneNumber": "789456123",
+  "lastname": "Meier",
+  "phoneNumber": "456789123",
+  "place": "Hamburg",
+  "plz": "21035",
+  "streetname": "Beispielweg"
+}

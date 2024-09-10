@@ -1,0 +1,30 @@
+{
+    "contractNumber": "1130",
+    "customerNumber": "5240",
+    "houseNumber": "15",
+    "lastname": "Meier",
+    "phoneNumber": "123456",
+    "place": "Stuttgart",
+    "plz": "70173",
+    "streetname": "Königstraße",
+    "email": "ann@web.de",
+    "firstname": "Anna",
+    "houseOrKfz": "house",
+    "damagedItems": [
+        {
+            "name": "Dach",
+            "age": 10,
+            "price": "1200,00"
+        }
+    ],
+    "housePersonType": "Eigentümer",
+    "houseDamageDescription": "Dachziegel durch Sturm beschädigt",
+    "houseDamagePlaces": [
+        "Dach"
+    ],
+    "houseInsuranceType": "Gebäude",
+    "damageDate": "2024-06-01",
+    "damageDescription": "Sturmschaden",
+    "damagePlace": "Dach",
+    "damageTime": "14:00"
+}

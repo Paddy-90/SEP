@@ -1,0 +1,25 @@
+{
+  "contractNumber": "5567",
+  "customerNumber": "8765",
+  "damageDate": "2024-06-15",
+  "damageDescription": "Wasserschaden im Keller",
+  "damagePlace": "Keller",
+  "damageTime": "03:30",
+  "damagedItems": [
+    {
+      "name": "Waschmaschine",
+      "price": "800,00"
+    }
+  ],
+  "email": "example1@web.de",
+  "firstname": "Anna",
+  "houseDamageDescription": "Rohrbruch",
+  "houseInsuranceType": "Gebäude",
+  "houseNumber": "45",
+  "housePersonType": "Eigentümer",
+  "lastname": "Schmidt",
+  "place": "Hamburg",
+  "plz": "22303",
+  "streetname": "Musterstraße",
+  "victimStreet": "Musterstraße"
+}

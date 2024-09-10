@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datei Upload Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/regelwerke_upload_admin.css') }}">
+</head>
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.svg')}}" class="logo" alt="Logo">
+    </header>
+
+    <div class="wrapper">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <h2>Hier können Sie uns Dokumente zu Ihrem Schaden melden</h2>
+            <p>Wenn Sie ein Regelwerk in die Datenbank hinzufügen möchten, können Sie das Dokument hier hochladen.</p>
+            <ul>
+                <li>Sie können Dateien in folgenden Formaten hochladen: txt</li>
+                <li>Bitte stellen Sie sicher, dass das Gültigkeitsdatum sowie die Kategorie genau angegeben sind</li>
+            </ul>
+
+            <div class="file-data">
+                <label class="file-data-label">
+                    <span>Hochladen</span>
+                    <input type="file" name="file" id="file" accept=".txt, .pdf, .doc, .docx" style="display: none;" required>
+                </label>
+            </div>
+
+            <div class="regelw-file-info" id="file-info">
+                <span id="file-name" class="file-info-text"></span>
+            </div>
+
+            <div class="req-information">
+                <div class="versicherung-dropdown">
+                    <select name="kategorie" id="kategorie" required>
+                        <option value="" disabled selected>Bitte wählen Sie eine Versicherung aus:</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Haftpflicht">Haftpflicht</option>
+                        <option value="Haus">Haus</option>
+                        <option value="DigitalSchutz">DigitalSchutz</option>
+                    </select>
+                    <ion-icon name="albums"></ion-icon>
+                </div> 
+                <input type="date" name="gueltig_datum" id="gueltig_datum" placeholder="Gültigkeitsdatum" required>
+            </div>
+
+            <div class="upload-button">
+                <button type="submit">Hinzufügen
+                <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+
+            <div class="back-button">
+                <a href="{{ url_for('index') }}">
+                    <button type="button" class="btn-back">
+                        <ion-icon name="caret-back-outline"></ion-icon> Zurück
+                    </button>
+                </a>
+            </div>
+        </form>
+
+        {% if file_path %}
+            <p>Datei hochgeladen: <a href="{{ file_path }}" target="_blank">{{ file_path }}</a></p>
+        {% endif %}
+
+    </div>
+
+    <script type="module">
+        const fileInput = document.getElementById('file');
+        const fileNameDisplay = document.getElementById('file-name');
+        const removeFileBtn = document.getElementById('remove-file-btn');
+
+        fileInput.addEventListener('change', function() {
+            if (fileInput.files.length > 0) {
+                fileNameDisplay.textContent = fileInput.files[0].name;
+                removeFileBtn.style.display = 'inline-block';
+            }
+        });
+    </script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,10 @@
+{
+    "newData": true,
+    "overwriteData": false,
+    "fittingData": false,
+    "questionAboutData": false,
+    "alreadyKnownData": [
+        "plz",
+        "damageDate"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "kfz_insuranceType": "[<KFZ>, <Person>, <Sache>]",
+    "kfz_responsibleParty": "[<Ich>, <unfallgegner>, <Sonstiger>, <Unklar>]",
+    "kfz_whathappened": "[<Schaden am eigenen Fahrzeug>, <Fremdschaden>]",
+    "housePersonType": "[<Eigentümer>, <Mieter>]",
+    "houseInsuranceType": "[<Gebäude>, <Hausrat>]",
+    "houseDamagePlaces": [
+        "Küche", "Wohn- /Schlaf- /Arbeitszimmer", "Bad / WC", "Keller", "Dachboden", "Garage", "Kinderzimmer", "Flur / Diele", "Komplette Wohnung /Komplettes Haus", "Außenbereich", "Sonstiges"
+    ]
+}

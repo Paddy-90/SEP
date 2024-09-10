@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/user_data.css')}}">
+</head>
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.svg')}}" class="logo" alt="Logo">
+    </header>
+
+    <div class="wrapper">
+        <form action="{{ url_for('submit_data') }}" method="POST">
+            <h1>Informationen zum Vertrag</h1>
+            
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="vorname" placeholder="Vorname" value="{{ vorname }}">
+                    <ion-icon name="person"></ion-icon>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="name" placeholder="Nachname" value="{{ name }}">
+                    <ion-icon name="person"></ion-icon>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" name="kundennummer" placeholder="Kundennummer" value="{{ anw_id }}">
+                    <ion-icon name="albums"></ion-icon>
+                </div>
+                <div class="input-field">
+                    <div class="versicherung-dropdown">
+                    <select name="versicherung" required>
+                        <option value="" disabled selected>Bitte wählen Sie eine Versicherung aus:</option>
+                        <option value="Auto">Auto</option>
+                        <option value="Haftpflicht">Haftpflicht</option>
+                        <option value="Haus">Haus</option>
+                        <option value="DigitalSchutz">DigitalSchutz</option>
+                    </select>
+                    <ion-icon name="albums"></ion-icon>
+                    </div> 
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="date" name="gueltig_datum" id="gueltig_datum" placeholder="Gültigkeitsdatum" required>
+                    <ion-icon name="calendar"></ion-icon>
+                </div>
+            </div>
+            
+            <div class="nav-btns">
+                    <button type="button" class="btn-back" onclick="window.history.back()">Zurück</button>
+                </form>
+                    <button type="submit" class="btn-forward">Weiter</button>
+                </form>
+            </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

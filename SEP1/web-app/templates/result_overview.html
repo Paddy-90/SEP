@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Overview</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/result_overview.css')}}">
+</head>
+<body>
+    <header>
+        <image src="{{ url_for('static', filename='images/logo.svg')}}" class="logo">
+    </header>
+
+    <div class="wrapper">
+            <h1>Ergebnis</h1>
+            <p>Nach eingehender Prüfung des von Ihnen beschriebenen Sachverhalts können wir Ihnen Folgendes mitteilen:</p>
+
+            <div class="result-field">
+                <p>{{ antwortMitChatOpenAI }}</p>
+            </div>
+
+            <h2>Abschnitte aus den Regelwerken</h2>
+            <div class="section-field">
+                <div class="section">
+                    <h3>{{ relevant_section.metadata.regelwerk_name }}</h3>
+                    <p>{{ relevant_section.text }}</p>
+                </div>
+            </div>
+            
+            <div class="nav-btns">
+                <form action="{{ url_for('regulations_overview') }}">
+                    <button type="submit" class="btn-back">Zurück</button>
+                </form>
+                <form action="{{ url_for('claim') }}">
+                    <button type="submit" class="btn-claim">Schaden anpassen</button>
+                </form>
+                <form action="{{ url_for('index') }}">
+                    <button type="submit" class="btn-forward">Startseite</button>
+                </form>
+            </div>
+                
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

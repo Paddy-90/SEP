@@ -1,0 +1,15 @@
+{
+  "contractNumber": "2345",
+  "customerNumber": "5678",
+  "damageDate": "2024-08-05",
+  "damageDescription": "Blitzschlag",
+  "damagePlace": "Dachgeschoss",
+  "damagedItems": [],
+  "firstname": "Lisa",
+  "houseInsuranceType": "Hausrat",
+  "houseNumber": "8",
+  "lastname": "Fischer",
+  "place": "Berlin",
+  "plz": "10115",
+  "streetname": "Friedrichstraße",
+}

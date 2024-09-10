@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulations Overview</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/regulations_overview.css')}}">
+</head>
+<body>
+    <header>
+        <image src="{{ url_for('static', filename='images/logo.svg')}}" class="logo">
+    </header>
+
+    <div class="wrapper">
+            <h1>Auswahl der Regelwerke</h1>
+            <p>Anhand von Ihren Angaben konnten die aufgelisteten Regelwerke für Ihre Anfrage ausgewählt werden.</p>
+            <ul class="hinweise">
+                <li>Mit einem Klick können Sie nicht relevante Regelwerke aus Ihrer Auswahl entfernen.</li>
+                <li>Alle ausgewählten Regelwerke werden für die nachfolgenden Prüfung verwendet.</li>
+            </ul>
+
+            <ul class="regelw-li">
+                {% for regelw in selec_regelw %}
+                    <li>
+                        <ion-icon name="document-outline"></ion-icon>
+                        {{ regelw['regelw_name'][:-4] if regelw['regelw_name'].endswith('.txt') else regelw['regelw_name'] }}
+                        <div class="btn-container">
+                            <a href="{{ url_for('download_file', regelw_id=regelw['regelw_id']) }}" class="btn-download">Regelwerk anschauen</a>
+                            <form action="{{ url_for('remove_regelwerk', regelw_id=regelw['regelw_id']) }}" method="POST">
+                                <button type="submit" class="btn-remove">Entfernen</button>
+                            </form>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <div class="nav-btns">
+                <form action="{{ url_for('claim') }}">
+                    <button type="submit" class="btn-back">Zurück</button>
+                </form>
+                <form action="{{ url_for('result_overview') }}">
+                    <button type="submit" class="btn-forward">Absenden</button>
+                </form>
+            </div>
+                
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

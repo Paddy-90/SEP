@@ -1,0 +1,31 @@
+{
+    "contractNumber": "1123",
+    "customerNumber": "5233",
+    "damageDate": "2024-05-24",
+    "damageDescription": "Brandursache unbekannt",
+    "damagePlace": "Obergeschoss",
+    "damageTime": "16:01",
+    "damagedItems": [
+        {
+            "name": "Sofa",
+            "age": 5,
+            "price": "500,00"
+        }
+    ],
+    "email": "s@web.de",
+    "firstname": "Sarah",
+    "houseOrKfz": "house",
+    "houseDamageDescription": "Brand im og",
+    "houseDamagePlaces": [
+        "Küche",
+        "Wohn- /Schlaf- /Arbeitszimmer"
+    ],
+    "houseInsuranceType": "Gebäude",
+    "houseNumber": "12",
+    "housePersonType": "Eigentümer",
+    "lastname": "Wohlert",
+    "phoneNumber": "123123",
+    "place": "Braunschweig",
+    "plz": "38118",
+    "streetname": "Straßi"
+}

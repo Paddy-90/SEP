@@ -1,0 +1,27 @@
+{
+  "contractNumber": "7856",
+  "customerNumber": "4321",
+  "damageDate": "2024-09-20",
+  "damageDescription": "Parkrempler",
+  "damagePlace": "Parkplatz Einkaufszentrum",
+  "damageTime": "14:45",
+  "damagedItems": [
+    {
+      "name": "Seitenspiegel"
+    }
+  ],
+  "email": "example3@web.de",
+  "firstname": "Karl",
+  "kfz_InsuranceType": "KFZ",
+  "kfz_responsibleParty": "Ich",
+  "kfz_victimCarManufactor": "Opel",
+  "kfz_victimCarPlate": "M-XY-456",
+  "kfz_victimCarType": "Opel Astra",
+  "lastname": "Hoffmann",
+  "phoneNumber": "321654987",
+  "place": "München",
+  "plz": "80331",
+  "streetname": "Leopoldstraße",
+  "houseNumber": 23,
+  "houseOrKfz": "kfz"
+}

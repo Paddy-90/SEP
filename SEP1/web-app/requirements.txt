@@ -1,0 +1,13 @@
+Flask
+SQLAlchemy
+psycopg2-binary
+milvus
+openai
+python-dotenv
+werkzeug
+langchain
+langchain_openai
+langchain_community
+requests
+faiss-cpu
+chromadb

@@ -1,0 +1,47 @@
+{
+    "contractNumber": "1122",
+    "customerNumber": "5231",
+    "damageDate": "2024-05-24",
+    "damageDescription": "Brandursache unbekannt",
+    "damagePlace": "Obergeschoss",
+    "damageTime": "16:01",
+    "damagedItems": [
+        {
+            "name": "Sofa",
+            "age": "5",
+            "price": "500,00"
+        }
+    ],
+    "email": "sa@web.de",
+    "firstname": "Sarah",
+    "houseOrKfz": "house",
+    "houseDamageDescription": "Brand im og",
+    "houseDamagePlaces": [
+        "Küche",
+        "Wohn- /Schlaf- /Arbeitszimmer"
+    ],
+    "houseInsuranceType": "Gebäude",
+    "houseNumber": "12",
+    "housePersonType": "Eigentümer",
+    "kfz_insuranceType": "KFZ",
+    "kfz_responsibleParty": "Ich",
+    "kfz_policeStation": "neun",
+    "kfz_victimCarManufactor": "Ford",
+    "kfz_victimCarPlate": "BS-J-96",
+    "kfz_victimCarType": "Ford Fiesta",
+    "kfz_victimEmail": "j@web.de",
+    "kfz_victimFirstname": "Julius",
+    "kfz_victimLastname": "K",
+    "kfz_victimPhoneNumber": "1234565",
+    "kfz_victimPlace": "Braunschweig",
+    "kfz_victimPlz": "38118",
+    "kfz_victimStreetNumber": "13",
+    "kfz_whatDamaged": "Verbrannt",
+    "kfz_whathappened": "Schaden am eigenen Fahrzeug",
+    "lastname": "Wohlert",
+    "phoneNumber": "123123",
+    "place": "Braunschweig",
+    "plz": "38118",
+    "streetname": "Straßi",
+    "victimStreet": "Straßi"
+}
